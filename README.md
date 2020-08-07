@@ -1,6 +1,6 @@
 # Seq Ext
 
-This python script extracts DNA sequence of the positions specified by BED format file from the genome.  
+This python script extracts DNA sequences of the positions specified by BED format file from the genome.  
 
 ## Requirements:  
 
