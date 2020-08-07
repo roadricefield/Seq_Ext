@@ -22,7 +22,7 @@ Notes:
 
 ## Example:
 
-This repository contains the test data, `Test_regions.bed` and `chr19.fa` (mm10 chr19). You can test this script just running,  
+This repository contains the test data, `Test_regions.bed` and dummy FASTA file `chrA.fa`. You can test this script just running,  
 
 ```
 $ python Seq_Ext.py Test_regions.bed ./ > res.fa
@@ -31,16 +31,15 @@ $ python Seq_Ext.py Test_regions.bed ./ > res.fa
 The result should be following;
 
 ```
->chr19_37345637-37345737
-cgggtgctcatgcagtgcacaaacatacactcagcaagcaaaatactcat
-acacataaagtaaaaTctttagttcaaaccatcaggatttgaagtataaa
+>chrA_4555-4655
+ATAACTGAATTTATCAAGCAGAGTCTGAACTTCCAATCCTGTCAGAAGCC
+ATCTTACTGCATCTCAGGGAATACACCAATGTACCAACTCCCTTTTTCAG
 
->chr19_39378377-39378477
-agcaaaaCAACAGCAAAACCAAAAATAATAAAGAATAACTAATCAAAATG
-AAGGATGAGATAAAGTAATGAAATAAAAACAGTCAAAATGCAGAAAAGAA
+>chrA_5555-5655
+CAGAGTTCATGGCAGGGAAGGAATGTTCAtggttacagtgtatcgtcagt
+caggagccctgaagtttgggctggaaccagctgcaggtgacaacccaaaa
 
->chr19_39382013-39382113
-caatcaaagaagcaacactaatccacagcaaagtgtatctccaaataata
-ttaatcccacccattttttaaagaaagaaaatgctgaggagatccaattg
+>chrA_6555-6655
+gcctggttgaagtaggtgtgtcactgtgggcatgggctttaatcctcggt
+gcctggaagccagtcttctagctgccttcagaacaattggtgaaaccttc
 ```
-
