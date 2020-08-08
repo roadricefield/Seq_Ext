@@ -9,17 +9,13 @@ import pandas as pd
 #The number of characters contained in one row in your genome FASTA file
 fasta_width = 50
 
-def get_row(index,N):
-    if index%N == 0:
-        return int(index/N + 1)
-    else:
-        return math.ceil(index/N)
-
 output_fasta_width = 50
 if len(sys.argv) == 4: output_fasta_width = int(sys.argv[3])
 
 if len(sys.argv) < 3:
-    print("Usage: python extract_sequence.py [path to your input bed file] [path to the directory which contains your genome FASTA files]  [The number of characters contained in one row of the output FASTA file, default = 50]")
+    print("Usage: python extract_sequence.py [path to your input bed file] " 
+    "[path to the directory which contains your genome FASTA files]  "
+    "[The number of characters contained in one row of the output FASTA file, default = 50]")
 
 input_bed = pd.read_table(sys.argv[1], header = None)
 
@@ -37,8 +33,8 @@ for i in range(len(input_bed)):
 
     start, end = region[1], region[2]
     
-    start_row = get_row(start, fasta_width)
-    end_row = get_row(end, fasta_width)
+    start_row = math.floor(start/fasta_width) + 1
+    end_row = math.floor(end/fasta_width) + 1
 
     S = []
 
