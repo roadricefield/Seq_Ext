@@ -6,16 +6,16 @@ import pandas as pd
 #sys.argv[1]: input bed file
 #sys.argv[2]: path to the directory which contains genome sequences
 
-#The number of characters contained in one row in your genome FASTA file
+#The number of characters contained in each row in your genome FASTA files
 fasta_width = 50
 
 output_fasta_width = 50
 if len(sys.argv) == 4: output_fasta_width = int(sys.argv[3])
 
 if len(sys.argv) < 3:
-    print("Usage: python extract_sequence.py [path to your input bed file] " 
+    print("Usage: python extract_sequence.py [path to your input BED file] " 
     "[path to the directory which contains your genome FASTA files]  "
-    "[The number of characters contained in one row of the output FASTA file, default = 50]")
+    "[The number of characters contained in each row of the output FASTA, default = 50]")
 
 input_bed = pd.read_table(sys.argv[1], header = None)
 
