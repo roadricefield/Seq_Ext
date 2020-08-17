@@ -50,7 +50,7 @@ for i in range(len(input_bed)):
 
     M = math.floor(len(extracted_Seq)/output_fasta_width)
 
-    print(">" + region[0] + "_" + str(region[1]) + "-" + str(region[2]))
+    print(">" + region[0] + ":" + str(region[1]) + "-" + str(region[2]))
     index=0
     for _ in range(M):
         print(extracted_Seq[index:index+output_fasta_width])

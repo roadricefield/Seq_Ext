@@ -34,15 +34,15 @@ $ python Seq_Ext.py ./Test_data/Test_regions.bed ./Test_data/ > res.fa
 The result should be following;
 
 ```
->chrA_4555-4655
+>chrA:4555-4655
 ATAACTGAATTTATCAAGCAGAGTCTGAACTTCCAATCCTGTCAGAAGCC
 ATCTTACTGCATCTCAGGGAATACACCAATGTACCAACTCCCTTTTTCAG
 
->chrA_5555-5655
+>chrA:5555-5655
 CAGAGTTCATGGCAGGGAAGGAATGTTCAtggttacagtgtatcgtcagt
 caggagccctgaagtttgggctggaaccagctgcaggtgacaacccaaaa
 
->chrA_6555-6655
+>chrA:6555-6655
 gcctggttgaagtaggtgtgtcactgtgggcatgggctttaatcctcggt
 gcctggaagccagtcttctagctgccttcagaacaattggtgaaaccttc
 ```
